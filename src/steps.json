@@ -1,0 +1,25 @@
+[
+    {
+      "id": 1,
+      "message": "Hola,  ¿Cuál es tu nombre?",
+      "trigger": 2
+    },
+    {
+      "id": 2,
+      "user": true,
+      "trigger": 3
+    },
+    {
+      "id": 3,
+      "message": "Que tal ! {previousValue}, ¿Cómo te puedo ayudar?",
+      "options": [
+        { "value": "male", "label": "Male", "trigger": 5 },
+        { "value": "female", "label": "Female", "trigger": 5 }
+      ]
+    },
+    {
+      "id": 4,
+      "message": "Que tal ! {previousValue}, ¿Cómo te puedo ayudar?",
+      "trigger": 4
+    }
+  ]

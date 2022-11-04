@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import ChatBot from 'react-simple-chatbot';
+import steps from './steps.json';
+import { Row } from 'antd';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      name: '',
+      gender: '',
+      age: '',
+    };
+  }
+
+
+  render() {
+    return (
+
+      <div className='centered-div'>
+        <ChatBot
+          steps={steps}
+        />
+      </div>
+    );
+  }
 }
 
 export default App;
