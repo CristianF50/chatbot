@@ -24,6 +24,12 @@ class App extends Component {
     }
   }
 
+  handleEnd({ steps, values }) {
+    // console.log(steps);
+    // console.log(values);
+    alert(`El chat ha terminado y los valores son: ${JSON.stringify(values)}`);
+  }
+
   render() {
 
     let steps = [
@@ -155,6 +161,7 @@ class App extends Component {
 
       <div className='centered-div'>
         <ChatBot
+          handleEnd={this.handleEnd}
           steps={steps}
         />
       </div>
