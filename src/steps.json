@@ -13,8 +13,8 @@
       "id": 3,
       "message": "Que tal ! {previousValue}, ¿Cómo te puedo ayudar?",
       "options": [
-        { "value": "male", "label": "Male", "trigger": 5 },
-        { "value": "female", "label": "Female", "trigger": 5 }
+        { "value": "male", "label": "Male", "trigger": 4 },
+        { "value": "female", "label": "Female", "trigger": 4 }
       ]
     },
     {
